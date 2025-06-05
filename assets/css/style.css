@@ -1,0 +1,158 @@
+/*? AUTHOR DETAILS
+*AUTHOR NAME: ANIK ISLAM
+*TEMPLATE" 
+*VERSION: 1.0.0
+*/
+
+
+/*! ROOT VARIABLES  */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --global-fonts: "Sora", sans-serif;
+    --hader-menu-color: #111111;
+    --menu-hover-color: #179800;
+}
+
+/*? ESSENTIAL SET UP  */
+body {
+    font-family: var(--global-fonts);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*? ESSENTIAL SET UP  */
+
+/* ?SET UP FONTS  */
+h1 {
+    font-size: px;
+}
+
+h2 {
+    font-size: px;
+}
+
+h3 {
+    font-size: px;
+}
+
+h4 {
+    font-size: px;
+}
+
+h5 {
+    font-size: px;
+}
+
+h6 {
+    font-size: px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* ?SET UP FONTS */
+
+
+/*HEADER SECTION START  */
+.header-section {
+    overflow: hidden;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    /* gap: 300px; */
+    padding: 25px 0; 
+    justify-content: space-between;
+}
+
+.menus {
+    display: inline-flex; 
+} 
+.menus li a {
+    font-size: 20px;
+    color: var(--hader-menu-color);
+    padding: 0 16px;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.menus li a:hover {
+    color: var(--menu-hover-color);
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.login a,
+.register a {
+    color: var(--menu-hover-color);
+    font-size: 20px;
+    border: 1px solid var(--menu-hover-color);
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.login a:hover{
+    background-color: var(--menu-hover-color);
+    color: var(--white-color);
+}
+
+.register a:hover{
+    background-color: transparent;
+    color: var(--menu-hover-color);
+}
+.register a {
+    background-color: var(--menu-hover-color);
+    color: var(--white-color);
+}
+.bars a i{
+    background-color: var(--menu-hover-color);
+    font-size: 22px;
+    color: var(--white-color);
+    padding: 15px 18px;
+    border-radius: 8px;
+    display: none;
+    opacity: 0;
+}
+/*HEADER SECTION EMD */
+
+/* SECTION START  */
+/* SECTION EMD */
