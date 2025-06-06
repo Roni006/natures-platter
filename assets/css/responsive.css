@@ -22,11 +22,27 @@
         display: block !important;
         opacity: 1 !important;
     }
+
+    .hero-bg img {
+        width: 100%;
+    }
+
+    .service-blocks {
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-content: center;
+
+    }
 }
 
 @media(max-width: 775px) {
     .header-row {
         gap: 65px !important;
+    }
+
+    .hero-title h1 {
+        max-width: 575px;
+        font-size: 40px;
     }
 }
 
@@ -42,6 +58,13 @@
     .login a {
         display: none !important;
     }
+
+    .service-blocks {
+        grid-template-columns: 1fr;
+
+        justify-content: center;
+
+    }
 }
 
 
@@ -52,5 +75,21 @@
 
     .header-middle {
         gap: 20px !important;
+    }
+
+    .hero-title h1 {
+        max-width: 575px;
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        max-width: 415px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-blocks {
+        margin-top: 25px;
     }
 }

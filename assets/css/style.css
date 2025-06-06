@@ -12,11 +12,16 @@
     --global-fonts: "Sora", sans-serif;
     --hader-menu-color: #111111;
     --menu-hover-color: #179800;
+    --template-bg: #EFEBE3;
+    --sb-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --sb-hover-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /*? ESSENTIAL SET UP  */
 body {
     font-family: var(--global-fonts);
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -44,27 +49,27 @@ li {
 
 /* ?SET UP FONTS  */
 h1 {
-    font-size: px;
+    font-size: 56px;
 }
 
 h2 {
-    font-size: px;
+    font-size: 36px;
 }
 
 h3 {
-    font-size: px;
+    font-size: 30px;
 }
 
 h4 {
-    font-size: px;
+    font-size: 24px;
 }
 
 h5 {
-    font-size: px;
+    font-size: 30px;
 }
 
 h6 {
-    font-size: px;
+    font-size: 16px;
 }
 
 h1,
@@ -77,25 +82,34 @@ h6 {
     padding: 0;
 }
 
+img {
+    /* max-width: 100%; */
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 /* ?SET UP FONTS */
 
 
 /*HEADER SECTION START  */
 .header-section {
     overflow: hidden;
+
 }
 
 .header-row {
     display: flex;
     align-items: center;
     /* gap: 300px; */
-    padding: 25px 0; 
+    padding: 25px 0;
     justify-content: space-between;
 }
 
 .menus {
-    display: inline-flex; 
-} 
+    display: inline-flex;
+}
+
 .menus li a {
     font-size: 20px;
     color: var(--hader-menu-color);
@@ -130,20 +144,23 @@ h6 {
     border-radius: 8px;
     transition: 0.2s;
 }
-.login a:hover{
+
+.login a:hover {
     background-color: var(--menu-hover-color);
     color: var(--white-color);
 }
 
-.register a:hover{
+.register a:hover {
     background-color: transparent;
     color: var(--menu-hover-color);
 }
+
 .register a {
     background-color: var(--menu-hover-color);
     color: var(--white-color);
 }
-.bars a i{
+
+.bars a i {
     background-color: var(--menu-hover-color);
     font-size: 22px;
     color: var(--white-color);
@@ -152,7 +169,90 @@ h6 {
     display: none;
     opacity: 0;
 }
+
 /*HEADER SECTION EMD */
+
+/*a HERO SECTION START  */
+.hero-section {
+    background-color: var(--template-bg);
+    padding: 90px 0 0 0;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-title h1 {
+    max-width: 828px;
+    margin: 0 auto;
+}
+
+.hero-title h1 span {
+    color: var(--menu-hover-color);
+}
+
+.hero-text p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.hero-bg img {
+    margin: 0 auto;
+}
+
+/*a HERO SECTION EMD */
+
+/*SERVICE SECTION START  */
+.service-section {
+    padding: 70px 0;
+}
+
+.service-title h2 {
+    color: var(--menu-hover-color);
+    font-weight: 600;
+}
+
+.service-blocks {
+    margin-top: 50px;
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+}
+
+.service1-block1 {
+    background-color: var(--template-bg);
+    max-width: 425px;
+    text-align: center;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: var(--sb-shadow);
+    transition: 0.2s;
+}
+
+.service1-block1:hover {
+    box-shadow: var(--sb-hover-shadow);
+}
+
+.sb-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.sb-title h4 {
+    font-weight: 600;
+    padding: 25px 0 12px 0;
+}
+
+.sb-text p {
+    max-width: 360px;
+}
+
+/*SERVICE SECTION EMD */
 
 /* SECTION START  */
 /* SECTION EMD */
