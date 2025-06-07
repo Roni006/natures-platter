@@ -65,7 +65,7 @@ h4 {
 }
 
 h5 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h6 {
@@ -207,7 +207,7 @@ img {
 
 /*SERVICE SECTION START  */
 .service-section {
-    padding: 70px 0;
+    padding: 90px 0;
 }
 
 .service-title h2 {
@@ -217,7 +217,7 @@ img {
 
 .service-blocks {
     margin-top: 50px;
-    display: grid; 
+    display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -238,6 +238,12 @@ img {
     box-shadow: var(--sb-hover-shadow);
 }
 
+/* .sb-img{
+    background-color: var(--white-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+} */
 .sb-img img {
     display: block;
     margin: 0 auto;
@@ -253,6 +259,63 @@ img {
 }
 
 /*SERVICE SECTION EMD */
+
+/*PRODUCT SECTION START  */
+.product-section {
+    padding: 70px 0;
+    background-color: var(--template-bg);
+}
+
+.product-section .service-top {
+    margin-bottom: 65px;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* gap: 50px; */
+    column-gap: 50px;
+}
+
+.product1 {
+    padding: 16px 25px;
+    background-color: var(--white-color);
+    max-width: 500px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.p-img {
+    background-color: var(--template-bg);
+    width: 85px;
+    height: 85px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.p-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.p-title h4 {
+    padding: 8px 0 5px 0;
+    font-weight: 500;
+}
+
+.p-price h5 {
+    font-weight: 500;
+}
+
+/*PRODUCT SECTION EMD */
 
 /* SECTION START  */
 /* SECTION EMD */
