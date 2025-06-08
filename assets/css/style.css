@@ -15,6 +15,10 @@
     --template-bg: #EFEBE3;
     --sb-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --sb-hover-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --ol-left-bg: #115414;
+    --ol-left-btn-bg: #63B76D;
+    --or-right-bg: #102861;
+    --or-right-btn-bg: #2A4D97;
 }
 
 /*? ESSENTIAL SET UP  */
@@ -88,7 +92,9 @@ img {
     padding: 0;
     display: block;
 }
-
+.mb{
+    margin-bottom: 50px;
+}
 /* ?SET UP FONTS */
 
 
@@ -277,7 +283,8 @@ img {
     align-items: center;
     justify-content: center;
     /* gap: 50px; */
-    column-gap: 50px;
+    column-gap: 32px;
+    flex-shrink: 0;
 }
 
 .product1 {
@@ -290,6 +297,7 @@ img {
     gap: 25px;
     cursor: pointer;
     margin-bottom: 25px;
+    flex-shrink: 0;
 }
 
 .p-img {
@@ -316,6 +324,58 @@ img {
 }
 
 /*PRODUCT SECTION EMD */
+
+/*OFFER SECTION START  */
+.offer-section {
+    padding: 140px 0;
+}
+
+.offer-row {
+    display: flex;
+    gap: 20px;
+}
+ 
+
+.ol-row {
+    background-color: var(--ol-left-bg); 
+    display: flex;
+    border-radius: 16px;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.ol-left { 
+    padding:20px 0 42px 40px ;
+}
+
+.ol-btn a {
+    background-color: var(--ol-left-btn-bg);
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 15px;
+    color: var(--white-color);
+    margin: 30px 0 25px 0;
+}
+.ol-title h2{
+    color: var(--white-color);
+    font-weight: 400;
+}
+.ol-title h2 span{ 
+    font-weight: 600;
+}
+.or-img img{
+    padding-top: 33px;
+}
+.or-right{
+    padding: 20px 0 38px 25px;
+}
+#or-row{
+    background-color: var(--or-right-bg);
+}
+#or-btn a{
+    background-color: var(--or-right-btn-bg);
+}
+/*OFFER SECTION EMD */
 
 /* SECTION START  */
 /* SECTION EMD */
